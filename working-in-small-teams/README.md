@@ -4,7 +4,7 @@ This folder contains this file, and a `design.md` file.  Please follow the instr
 
 ## Instructions
 
-There are lots of Git commands in this section, so here is [a handy reference.](git-commands.md)
+There are lots of Git commands in this section, so here is [a handy reference.](../git-commands.md)
 
 ### Start work
 
@@ -32,9 +32,11 @@ NOTE: If you make a mistake with the name of the branch, you can rename the bran
     After either method, then review you code again using `git diff main`.
 1. Once you are happy with the changes, `push` your branch to the `origin` repo.
 
-Congratulations! You have just completed your changes, so now for the fun bit, getting those changes on to the `main` branch without breaking other people's changes.
+NOTE: This will fail if you don't have access to the repo.  Andy will have to add you as a collaborator before you can push.
 
 **When you get to here, let Andy know and we will wait for the others to catch up.**
+
+Congratulations! You have just completed your changes, so now for the fun bit, getting those changes on to the `main` branch without breaking other people's changes.
 
 ### Review the changes
 
@@ -42,8 +44,10 @@ Now that all the branches have been pushed, we want to review the changes.  Firs
 
 * Print out the branches that your repo knows about. `git branch -a`
 * Switch back to the `main` branch and `fetch` the latest changes.  You'll see that there is some information about the new branches that have appeared.
+* Print out the branches that your repo knows about. `git branch -a`.  You'll see the new branches listed as `remotes\origin\<branch name>`.
+* Check the `git log`.  `main` hasn't changed.
 
-Note: The `fetch` command fetches the changes from the server but does not update the branch you are on.  When you do a `pull`, it is two commands run one after the other:
+NOTE: The `fetch` command fetches the changes from the server but does not update the branch you are on.  When you do a `pull`, it is two commands run one after the other:
 
 ```bash
 git switch main
@@ -53,9 +57,6 @@ git merge origin/main
 ```
 
 When would you use `fetch` instead of `pull`?  You might be working on a local branch and want to check if someone has pushed a new branch for review.  If there is no upstream branch with the same name, or you have local changes, the `pull` command will fail to do the merge, so you'll get an error message.
-
-* Print out the branches that your repo knows about. `git branch -a`.  You'll see the new branches listed as `remotes\origin\<branch name>`.
-* Check the `git log`.  `main` hasn't changed.
 
 So how do we do the review?
 
@@ -69,11 +70,11 @@ NOTE: when you do this, it creates a new local branch with the name `<branch nam
 
 At this point, if we were developing a program, we would run the modified program and test it to make sure the bug has been fixed or the new feature works as expected.  Let the other person know that you have done the review and you are happy with it.
 
-If you want to delete the review branch to keep you repo tidy, use the command  `git branch -d <branch name>`.
+If you want to delete the review branch to keep your repo tidy, use the command  `git branch -d <branch name>`.
 
 ### The developer merges their changes
 
-We are going to take it in turns to to do the merge.
+** We are going to take it in turns to to do the merge, so let Andy know and wait here. **
 
 If you are the first one to merge your changes to the `main` branch, you can just type:
 
@@ -98,12 +99,12 @@ git pull
 # Merge the changes
 git merge <your branch name>
 # This may fail! If it does, you'll have to do this.
-# Find out what the problems are and resolve them.
+# Find out what the problems are and resolve them manually.
+# You can use the mergetool if installed.
 git mergetool
+# Otherwise use an editor and fix up the merge errors.
 # Commit the merge.
 git commit
 # Then you push the changes to origin main.
 git push
 ```
-
-TEST THIS!!!!
