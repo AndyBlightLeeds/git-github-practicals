@@ -12,9 +12,11 @@
 | `git branch -m <new branch name>` | Modifies the name of the current branch to `<new branch name>` |
 | `git branch -d <branch name>` | Deletes the specified branch name. |
 | `git diff <branch>` | Show the differences between this branch and the specified `<branch>` |
+| `git difftool <branch>` | Show the differences between this branch and the specified `<branch>` in an external program, e.g. `meld` |
 | `git commit -am "Commit message"` | Commit the current changeset to the Git repo. |
 | `git commit --amend` | Amend the current revision.  Files can be added using `git add`, any modified files are included and the commit message can be edited. |
 | `git merge <branch>` | Merges the specified branch into the current branch. |
+| `git mergetool <branch>` | Perform the merge in a different program, e.g. `meld`. Great when things go wrong with the automatic merge. |
 | `git push --set-upstream origin <your_branch>` | Pushes your local branch to the server. |
 | `git checkout -b <branch>` | Creates a new branch and switches to it. |
 | `git checkout <branch>` | Switches to the specified branch. |
