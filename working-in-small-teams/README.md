@@ -4,6 +4,8 @@ This folder contains this file, and a `design.md` file.  Please follow the instr
 
 ## Instructions
 
+There are lots of Git commands in this section, so here is [a handy reference.](git-commands.md)
+
 ### Start work
 
 Now that you have cloned this repo, you can go ahead and create a new branch.  Name the branch with your first name so we can work out who has made each set of changes.
@@ -32,7 +34,7 @@ NOTE: If you make a mistake with the name of the branch, you can rename the bran
 
 Congratulations! You have just completed your changes, so now for the fun bit, getting those changes on to the `main` branch without breaking other people's changes.
 
-When you get to here, let Andy know and we will wait for the others to catch up.
+**When you get to here, let Andy know and we will wait for the others to catch up.**
 
 ### Review the changes
 
@@ -46,7 +48,7 @@ Note: The `fetch` command fetches the changes from the server but does not updat
 ```bash
 git switch main
 # Now do the "pull"
-git fetch origin main
+git fetch origin
 git merge origin/main
 ```
 
