@@ -8,7 +8,7 @@ There are lots of Git commands in this section, so here is [a handy reference.](
 
 ### Start work
 
-Now that you have cloned this repo, you can go ahead and create a new branch.  Name the branch with your first name so we can work out who has made each set of changes.
+Now that you have cloned this repo, you can go ahead and create a new branch, `git branch <branch name>`.  Name the branch with your first name so we can work out who has made each set of changes, e.g. `git branch andy`.  
 
 NOTE: If you make a mistake with the name of the branch, you can rename the branch you are on using `git branch -m <new branch name>`.  However, if the branch has been pushed to the server, it is best not to change the local branch name.
 
