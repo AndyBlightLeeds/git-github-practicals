@@ -11,3 +11,5 @@ The program is intended to allow the user to create a pretty picture on the scre
 When the program is started, the user is presented with a screen that has a menu for at least these options: File->Open, File->Save, Exit.
 
 Add your next feature here...
+
+Andy added a new feature that makes your PC glow in the dark.  Colours are configurable by the user.
