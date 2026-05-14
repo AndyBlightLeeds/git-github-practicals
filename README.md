@@ -6,3 +6,9 @@ The examples are:
 
 * [Diff Patch Demo](diff-patch-demo/README.md)
 * [Working In Small Teams](working-in-small-teams/README.md)
+
+## Acknowledgements
+
+© 2026, University of Leeds.
+
+The author, A. Blight, has asserted his moral rights.
